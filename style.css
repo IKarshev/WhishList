@@ -1,0 +1,39 @@
+/* WishList */
+.WhishList{
+    display: block;
+    box-sizing: border-box;
+    width: 24px;
+    height: 24px;
+    text-decoration: none;
+    outline: none;
+    position: relative;
+}
+.WhishList.add-list::after{
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 100%;
+    height: 100%;
+    background-image: url('../images/icons/whishlist-add.svg');
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+}
+.WhishList.remove-list::after{
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 100%;
+    height: 100%;
+    background-image: url('../images/icons/whishlist-added.svg');
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+}
+#sale-icons-count.hide{
+    display: none;
+}
